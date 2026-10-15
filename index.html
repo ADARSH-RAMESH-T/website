@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXORA | Future Technology</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #080b14;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #202536;
+      position: sticky;
+      top: 0;
+      background: #080b14;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #00e5ff;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 22px;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background:
+        radial-gradient(ellipse at top, #14264c, #080b14 65%);
+    }
+
+    .tag {
+      color: #00e5ff;
+      border: 1px solid #00e5ff;
+      padding: 9px 16px;
+      border-radius: 30px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 78px);
+      max-width: 900px;
+      line-height: 1.1;
+    }
+
+    h1 span {
+      color: #00e5ff;
+    }
+
+    .hero p {
+      color: #aab3c5;
+      max-width: 600px;
+      line-height: 1.8;
+      margin: 24px 0;
+    }
+
+    .btn {
+      padding: 14px 25px;
+      border: none;
+      border-radius: 8px;
+      background: #00e5ff;
+      color: #080b14;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px #00e5ff55;
+    }
+
+    section {
+      padding: 75px 8%;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: #aab3c5;
+      margin: 15px 0 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+      );
+      gap: 22px;
+      text-align: left;
+    }
+
+    .card {
+      background: #101624;
+      border: 1px solid #252d42;
+      padding: 30px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      border-color: #00e5ff;
+      transform: translateY(-7px);
+    }
+
+    .card .icon {
+      font-size: 35px;
+    }
+
+    .card h3 {
+      margin: 20px 0 12px;
+    }
+
+    .card p {
+      color: #aab3c5;
+      line-height: 1.7;
+    }
+
+    .about {
+      background: #0d1220;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 20px auto;
+      color: #aab3c5;
+      line-height: 1.8;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #8c96aa;
+      border-top: 1px solid #202536;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+
+      .logo {
+        font-size: 19px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">NEXORA.</div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="tag">THE FUTURE STARTS HERE</div>
+
+    <h1>Think Beyond.<br><span>Build Tomorrow.</span></h1>
+
+    <p>
+      Discover a new world of technology, creativity,
+      and innovation. Turn ambitious ideas into
+      extraordinary digital experiences.
+    </p>
+
+    <a class="btn" href="#features">Explore More →</a>
+  </header>
+
+  <section id="features">
+    <h2>What We Offer</h2>
+    <p class="subtitle">
+      Powerful ideas. Modern technology. Endless possibilities.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>High Performance</h3>
+        <p>
+          Experience fast, efficient, and responsive
+          digital solutions built for modern needs.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <h3>Security First</h3>
+        <p>
+          Put safety, privacy, and reliability at the
+          heart of every digital experience.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Future Ready</h3>
+        <p>
+          Explore fresh ideas and innovative solutions
+          designed to help you move forward.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Innovation Has No Limits</h2>
+    <p>
+      We believe technology should empower people
+      to dream bigger, solve problems, and create
+      something meaningful.
+    </p>
+    <button class="btn" onclick="showMessage()">
+      Discover More
+    </button>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> NEXORA. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    function showMessage() {
+      alert("Your future begins with your next idea!");
+    }
+  </script>
+
+</body>
+</html>
